@@ -3,7 +3,7 @@
 #include <Servo.h>
 
 // ===== CONFIG =====
-LiquidCrystal_I2C lcd(0x27, 16, 2); // replace 0x27 with your I2C address
+LiquidCrystal_I2C lcd(0x27, 16, 2); 
 Servo servo;
 const int servoPin = 7;
 
@@ -15,7 +15,7 @@ const long bowlFullDist = 25; // cm, distance for "full bowl"
 // 2 hours = 2*60*60*1000 ms
 // For testing: set to 10000 = 10 seconds
 const unsigned long dispenseInterval = 30000UL; 
-// const unsigned long dispenseInterval = 10000UL; // uncomment for fast testing
+
 
 unsigned long lastDispense = 0;
 
